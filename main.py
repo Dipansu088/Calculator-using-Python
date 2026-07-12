@@ -13,6 +13,9 @@ def divide(a,b):
 def mod(a,b):
     return a%b
 
+def exp(a,b):
+    return a**b
+
 
 while True:
     try:
@@ -25,6 +28,8 @@ while True:
             3. Multiply
             4. Divide
             5. Modulus(Remainder)
+            6. Exit
+            7. Power/Exponent
             ''')
     except ValueError:
         print("Plz enter value only in integer or float.")
@@ -51,8 +56,12 @@ while True:
         elif choice==5:
             result=mod(a,b)
             print(f"The remainder of {a} and {b} is {result}")
+            
+        elif choice==7:
+            result=exp(a,b)
+            print(f"The power of {a} and {b} is {result}")
 
-        elif choice==5:
+        elif choice==6:
             print("Thank you for visiting.")
             break
         
