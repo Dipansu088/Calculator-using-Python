@@ -19,8 +19,7 @@ def exp(a,b):
 
 while True:
     try:
-        a=float(input("Enter 1st number (int or float only): "))
-        b=float(input("Enter 2nd number (int or float only): "))
+        a,b=map(float, input(f"Enter a and b (use space; int or float only): ").split())
         print(f"Which operation do u wanna perform?")
         print('''
             1. Add
@@ -31,8 +30,9 @@ while True:
             6. Exit
             7. Power/Exponent
             ''')
+    
     except ValueError:
-        print("Plz enter value only in integer or float.")
+        print("Plz enter value only in integer or float; enter both a and b with space separated.")
 
     try:
         choice=int(input(f"Enter ur choice here: "))
