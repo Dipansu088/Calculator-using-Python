@@ -69,6 +69,6 @@ while True:
             print("Enter a valid choice...")
             
     except ZeroDivisionError:
-        print("Value is not defined...")
+        print(f"The division between {a} and {b} is: Value is not defined...")
     except ValueError:
         print("Enter choices between 1-5!!!")
