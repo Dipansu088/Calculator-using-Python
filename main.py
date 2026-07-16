@@ -19,6 +19,7 @@ def exp(a,b):
 
 while True:
     try:
+        print(f"Hello user, welcome to the Python calculator.")
         a,b=map(float, input(f"Enter a and b (use space; int or float only): ").split())
         print(f"Which operation do u wanna perform?")
         print('''
