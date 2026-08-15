@@ -20,7 +20,8 @@ def exp(a,b):
 while True:
     try:
         print(f"Hello user, welcome to the Python calculator.")
-        a,b=map(float, input(f"Enter a and b (use space; int or float only): ").split())
+        a=float(input("Enter 1st number (int/float only): "))
+        b=float(input("Enter 2nd number (int/float only): "))
         print(f"Which operation do u wanna perform?")
         print('''
             1. Add
@@ -33,7 +34,8 @@ while True:
             ''')
     
     except ValueError:
-        print("Plz enter value only in integer or float; enter both a and b with space separated.")
+        print("Please enter a valid integer or float.")
+        continue
 
     try:
         choice=int(input(f"Enter ur choice here: "))
