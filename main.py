@@ -28,8 +28,8 @@ while True:
             3. Multiply
             4. Divide
             5. Modulus(Remainder)
-            6. Exit
-            7. Power/Exponent
+            6. Power/Exponent
+            7. Exit
             ''')
     
     except ValueError:
@@ -58,11 +58,11 @@ while True:
             result=mod(a,b)
             print(f"The remainder of {a} and {b} is {result}")
             
-        elif choice==7:
+        elif choice==6:
             result=exp(a,b)
             print(f"The power of {a} and {b} is {result}")
 
-        elif choice==6:
+        elif choice==7:
             print("Thank you for visiting.")
             break
         
@@ -72,4 +72,4 @@ while True:
     except ZeroDivisionError:
         print(f"The division between {a} and {b} is: Value is not defined...")
     except ValueError:
-        print("Enter choices between 1-5!!!")
+        print("Enter choices between 1-7!!!")
